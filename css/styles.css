@@ -63,17 +63,42 @@ ul {
   align-items: center;
 }
 
-.sidebar {
-  float: right;
-}
-
 .main-content {
   padding: 20px;
+  display: flex;
 }
 
 .section-title {
   color: #098bc3;
   text-decoration: underline;
+}
+
+.sidebar > .section-title:not(:first-child) {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.sidebar > .section-title:first-child {
+  margin-bottom: 20px;
+}
+
+.main-wrapper > .section-title:not(:first-of-type) {
+  margin-top: 30px;
+}
+
+.job-title,
+.school-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.project-title {
+  margin-top: 20px;
+}
+
+.link-title {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 .hard-skills-list,
@@ -108,4 +133,10 @@ ul {
 }
 
 .languages-list-item {
+}
+
+.date,
+.language-level {
+  font-style: italic;
+  color: #098bc3;
 }
